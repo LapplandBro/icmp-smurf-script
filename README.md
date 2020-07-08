@@ -37,3 +37,6 @@ pip install -r requirements.txt
 ```
 
 Tested with python 3.7.
+
+## NOTICE
+All the content uploaded to this repository is for learning propose only. Using the content is on your own responsibility.
