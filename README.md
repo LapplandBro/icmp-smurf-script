@@ -1,42 +1,44 @@
 # IP Spoofing - Smurf Attack
 
-> ICMP Echo attack  - flood the target with ping traffic
+> ICMP-эхо-атака - залить цель пинговым трафиком.
 
-## Usage
+## Использование
 
 ```
 $ python main.py -h
-usage: main.py [-h] -s SourceIP -d DestinationIP -n Count [-l Size]
+Использование: main.py [-h] -s SourceIP -d DestinationIP -n Count [-l Size]
 
 Ip Spoofing - Smurf Attack
 
-optional arguments:
-  -h, --help                             show this help message and exit
-  -s SourceIP, --src SourceIP            Enter IP to spoof
-  -d DestinationIP, --dst DestinationIP  Enter IP that will send the echo
-                                         replay
-  -n Count, --count Count                amount of packets to send
-  -l Size, --size Size                   Set buffer size
+необязательные аргументы:
+  -h, --help показать это справочное сообщение и выйти
+  -s SourceIP, --src SourceIP Введите IP для подмены
+  -d DestinationIP, --dst DestinationIP Введите IP, с которого будет отправлено эхо
+                                         воспроизведение
+  -n Count, --count Количество пакетов для отправки
+  -l Size, --size Размер Установите размер буфера.
 ```
 
-Example:
+Пример:
 
 ```
 $ python main.py -s 10.10.10.10 -d 192.168.43.1 -n 50 -l 100 
 ```
 
-## Requirements
+## Требования
 
 - [scapy](https://pypi.org/project/scapy/)
 - [argparse](https://pypi.org/project/argparse/)
 
-Example using pip:
+Пример с использованием pip:
 
 ```
 pip install -r requirements.txt
 ```
 
-Tested with python 3.7.
+Проверено с python 3.7.
 
-## NOTICE
-All the content uploaded to this repository is for learning propose only. Using the content is on your own responsibility.
+## ВНИМАНИЕ
+Все материалы, загруженные в этот репозиторий, предназначены только для обучения. Использование содержимого является вашей собственной ответственностью.
+
+Переведено с помощью DeepL.com (бесплатная версия)
